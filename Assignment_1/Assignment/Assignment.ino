@@ -20,6 +20,23 @@ void loop() {
 }
 
 // Converts characters to dots and dashes
+/**
+ * @brief Converts a single character to its Morse code representation
+ * @param c The character to convert (supports A-Z, 0-9, and common punctuation marks)
+ * @return const char* Returns a string containing the Morse code equivalent:
+ *         - For letters: Returns standard International Morse Code patterns
+ *         - For numbers: Returns standard International Morse Code patterns
+ *         - For punctuation: Returns standard International Morse Code patterns
+ *         - For space: Returns "/"
+ *         - For unsupported characters: Returns empty string ""
+ * 
+ * This function converts a single ASCII character to its International Morse Code equivalent.
+ * The conversion is case-insensitive for letters. The function supports:
+ * - Uppercase letters A through Z
+ * - Numbers 0 through 9
+ * - Common punctuation marks (., ,, ?, ', !, /, (), &, :, ;, =, +, -, _, ", $, @)
+ * - Space character (converted to "/" for word separation)
+ */
 const char* to_morse(char c) {
     switch (c) {
         // Letters A-Z

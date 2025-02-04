@@ -1,7 +1,36 @@
-/*
-Çağatay Kağan Atalay
-2401040040
-*/
+/**
+ * @file assignment2.c
+ * @brief A calculator program with various mathematical operations
+ * @author Çağatay Kağan Atalay 2401040040
+ * 
+ * This program implements a calculator with the following functions:
+ * - Addition of two numbers
+ * - Subtraction of two numbers
+ * - Multiplication of two numbers
+ * - Division of two numbers
+ * - Power calculation
+ * - Average calculation of multiple numbers
+ * - Maximum value finding from multiple numbers
+ *
+ * @functions
+ * get_int() - Gets integer input from user
+ * get_float() - Gets float input from user
+ * get_array() - Gets array of floats from user
+ * sum() - Adds two float numbers
+ * sub() - Subtracts two float numbers
+ * mult() - Multiplies two float numbers
+ * divd() - Divides two float numbers
+ * powr() - Calculates power of a number
+ * avg() - Calculates average of an array
+ * max() - Finds maximum value in an array
+ *
+ * @global_variables
+ * STUDENT - Student name constant
+ * SIZE - Maximum size for arrays
+ * STOP - Character to stop array input
+ * count - Stores array size for array operations
+ * by_zero - Flag for division by zero error
+ */
 
 #include <stdio.h>
 #include <stdlib.h>
